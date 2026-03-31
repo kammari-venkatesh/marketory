@@ -2,11 +2,13 @@
 
 @theme {
   --color-cream: #fffdd0;
-  --color-cream-elevated: #fffef5;
+  /* Barely lifted cream (same family as base — not grey/white) */
+  --color-cream-elevated: color-mix(in srgb, #fffdd0 94%, #355e3b 6%);
   --color-hunter: #355e3b;
   --color-hunter-muted: color-mix(in srgb, #355e3b 75%, white);
-  --color-ink: #2d2d2d;
-  --color-ink-muted: #5c5c5c;
+  --color-hunter-nav-active: color-mix(in srgb, #355e3b 78%, white);
+  --color-ink: color-mix(in srgb, #355e3b 32%, #0c120c 68%);
+  --color-ink-muted: color-mix(in srgb, #355e3b 62%, #1a2820 38%);
   --shadow-card: 0 1px 3px color-mix(in srgb, #355e3b 12%, transparent),
     0 1px 2px color-mix(in srgb, #355e3b 8%, transparent);
   --font-sans: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;

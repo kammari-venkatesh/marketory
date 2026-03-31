@@ -21,7 +21,7 @@ export function SummaryCard({ label, value, valueKey, icon: Icon, variant }) {
 
   return (
     <article
-      className="rounded-xl border border-hunter/12 bg-cream-elevated p-4 shadow-[var(--shadow-card)]"
+      className="rounded-xl border border-hunter/12 bg-cream p-4 shadow-[var(--shadow-card)]"
     >
       <div className="flex items-start justify-between gap-2">
         <p className="text-xs font-medium uppercase tracking-wide text-ink-muted">

@@ -13,6 +13,9 @@ import { formatCurrency } from '../../utils/format'
 
 const HUNTER = '#355e3b'
 const HUNTER_SOFT = '#9cb39a'
+const INK = '#1e2b21'
+const INK_MUTED = '#4a5e4e'
+const CREAM = '#fffdd0'
 
 function formatTick(n) {
   if (n >= 100000) return `₹${(n / 100000).toFixed(1)}L`
@@ -23,7 +26,7 @@ function formatTick(n) {
 export function SalesPurchaseChart() {
   return (
     <section
-      className="rounded-xl border border-hunter/12 bg-cream-elevated p-4 shadow-[var(--shadow-card)] sm:p-5"
+      className="rounded-xl border border-hunter/12 bg-cream p-4 shadow-[var(--shadow-card)] sm:p-5"
       aria-labelledby="chart-sales-purchase-title"
     >
       <h2
@@ -42,13 +45,13 @@ export function SalesPurchaseChart() {
             <CartesianGrid strokeDasharray="3 3" stroke="color-mix(in srgb, #355e3b 18%, transparent)" vertical={false} />
             <XAxis
               dataKey="day"
-              tick={{ fontSize: 11, fill: '#5c5c5c' }}
+              tick={{ fontSize: 11, fill: INK_MUTED }}
               axisLine={{ stroke: 'color-mix(in srgb, #355e3b 25%, transparent)' }}
               tickLine={false}
             />
             <YAxis
               tickFormatter={formatTick}
-              tick={{ fontSize: 11, fill: '#5c5c5c' }}
+              tick={{ fontSize: 11, fill: INK_MUTED }}
               axisLine={false}
               tickLine={false}
               width={52}
@@ -62,10 +65,12 @@ export function SalesPurchaseChart() {
                 borderRadius: '8px',
                 border: '1px solid color-mix(in srgb, #355e3b 20%, transparent)',
                 fontSize: '12px',
+                backgroundColor: CREAM,
+                color: INK,
               }}
             />
             <Legend
-              wrapperStyle={{ fontSize: '12px', paddingTop: '8px' }}
+              wrapperStyle={{ fontSize: '12px', paddingTop: '8px', color: INK_MUTED }}
               formatter={(value) =>
                 value === 'sales' ? 'Daily sales' : 'Daily purchases'
               }

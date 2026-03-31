@@ -12,7 +12,7 @@ function typeBadge(type) {
 export function RecentActivityTable() {
   return (
     <section
-      className="min-w-0 rounded-xl border border-hunter/12 bg-cream-elevated p-4 shadow-[var(--shadow-card)] sm:p-5"
+      className="min-w-0 rounded-xl border border-hunter/12 bg-cream p-4 shadow-[var(--shadow-card)] sm:p-5"
       aria-labelledby="recent-activity-title"
     >
       <h2 id="recent-activity-title" className="text-sm font-semibold text-ink">
@@ -22,7 +22,7 @@ export function RecentActivityTable() {
       <div className="mt-4 overflow-x-auto rounded-lg border border-hunter/10">
         <table className="w-full min-w-[520px] border-collapse text-left text-sm">
           <thead>
-            <tr className="border-b border-hunter/10 bg-hunter/5">
+            <tr className="border-b-2 border-hunter/15 bg-cream">
               <th scope="col" className="whitespace-nowrap px-3 py-2.5 font-medium text-ink-muted">
                 Type
               </th>

@@ -4,7 +4,7 @@ import { upcomingSchedules } from '../../data/mockDashboard'
 export function UpcomingSchedules() {
   return (
     <section
-      className="rounded-xl border border-hunter/12 bg-cream-elevated p-4 shadow-[var(--shadow-card)] sm:p-5"
+      className="rounded-xl border border-hunter/12 bg-cream p-4 shadow-[var(--shadow-card)] sm:p-5"
       aria-labelledby="upcoming-schedules-title"
     >
       <div className="flex items-center gap-2">

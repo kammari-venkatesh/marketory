@@ -4,6 +4,8 @@ import { formatCurrency } from '../../utils/format'
 
 const HUNTER = '#355e3b'
 const HUNTER_MUTED = '#8fbc8f'
+const INK = '#1e2b21'
+const CREAM = '#fffdd0'
 
 const data = [
   { name: 'Customer credit', value: creditDebitSnapshot.customerCredit },
@@ -13,7 +15,7 @@ const data = [
 export function CreditDebitChart() {
   return (
     <section
-      className="rounded-xl border border-hunter/12 bg-cream-elevated p-4 shadow-[var(--shadow-card)] sm:p-5"
+      className="rounded-xl border border-hunter/12 bg-cream p-4 shadow-[var(--shadow-card)] sm:p-5"
       aria-labelledby="chart-credit-debit-title"
     >
       <h2
@@ -51,6 +53,8 @@ export function CreditDebitChart() {
                   borderRadius: '8px',
                   border: '1px solid color-mix(in srgb, #355e3b 20%, transparent)',
                   fontSize: '12px',
+                  backgroundColor: CREAM,
+                  color: INK,
                 }}
               />
             </PieChart>
